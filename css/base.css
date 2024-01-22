@@ -1,0 +1,47 @@
+* {
+    /* border: 1px solid lightgray; */
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+
+    color: #424242;
+}
+
+
+/* Utility */
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: block;
+    margin-left: -10000px;
+    background: transparent;
+    font-size: 0;
+}
+
+
+/* Grid */
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.container-lg {
+    max-width: 1536px;
+}
+
+.emphasize {
+    line-height: 1.44;
+}

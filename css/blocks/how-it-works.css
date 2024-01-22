@@ -1,0 +1,109 @@
+.how-it-works {
+    padding: 169px 0 51px;
+}
+
+.how-it-works-header {
+    padding-bottom: 52px;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.how-it-works-header-head {
+    max-width: 584px;
+    line-height: 1.57; /* 37.68px */
+}
+
+.how-it-works-title {
+    margin-bottom: -3px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.how-it-works-subtitle {
+    color: #01996D;
+    font-family: Georgia, serif;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.how-it-works-header-content {
+    margin-top: 58px;
+    max-width: 671px;
+
+    color: #424242;
+    font-weight: 500;
+    line-height: 1.5; /* 30px */
+}
+
+.how-it-works-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , 390px);
+    column-gap: 97px;
+}
+
+.step {
+    max-width: 390px;
+}
+
+.step:nth-child(2) {
+    padding-top: 287px;
+}
+
+.step:nth-child(3) {
+    padding-top: 54px;
+}
+
+.step-heading {
+    position: relative;
+    margin-bottom: 55px;
+    padding-top: 135px;
+    padding-left: 88px;
+
+    color: #000;
+    /* text-align: center; */
+    font-family: "Georgia", serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.5; /* 45px */
+}
+
+.step-heading::before {
+    content: attr(data-number);
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    color: rgba(1, 153, 109, 0.20);
+    font-size: 150px;
+    font-weight: 400;
+    line-height: 1.5; /* 225px */
+}
+
+.step-text {
+    margin-bottom: 60px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #424242;
+    line-height: 1.5; /* 30px */
+}
+
+/* Чтобы картинка сохраняла пропорции при изменении размера */
+.step-img-wrapper {
+    position: relative;
+    /* background-color: blanchedalmond; */
+    /* aspect-ratio: 390/492; */
+    padding-bottom: 126%; /* 492/390=1.261 (H/W картинки) */
+}
+
+.step-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}

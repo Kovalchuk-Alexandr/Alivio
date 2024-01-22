@@ -1,0 +1,60 @@
+.header {
+    padding: 17px 0;
+    border-bottom: 1px solid #D6D6D6;
+}
+
+
+.header-row {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.header-logo {
+}
+
+.header-nav {
+    margin-left: 172px;
+}
+
+.header-nav a {
+    color: #292929;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.2s ease-in;
+}
+
+.header-nav a:hover {
+    color: #01996D;
+}
+
+.header-nav ul {
+    display: flex;
+    /* gap: 70px; */
+}
+
+/* Варианты сделать отступы между меню */
+.header-nav li:not(:last-child) {
+    /* margin-right: 70px; */
+}
+
+.header-nav li + li {
+    margin-left: 70px;
+}
+
+.header-login {
+    margin-left: auto;
+}
+
+.header-login > * + * {
+    margin-left: 35px;
+}
+
+.header-login-link {
+    color: #000000;
+    transition: color 0.2s ease-in;
+}
+
+.header-login-link:hover {
+    color: #01996D;
+}
