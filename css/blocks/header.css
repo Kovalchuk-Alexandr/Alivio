@@ -44,6 +44,7 @@
 
 .header-login {
     margin-left: auto;
+    margin-top: 3px;
 }
 
 .header-login > * + * {
@@ -58,3 +59,30 @@
 .header-login-link:hover {
     color: #01996D;
 }
+
+@media (max-width: 1199px) {
+    .header-row {
+        justify-content: space-between;
+    }
+
+    .header-nav {
+        margin-left: 30px;
+    }
+
+    .header-nav li + li {
+        margin-left: 30px;
+    }
+
+    .header-login {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 960px) {
+    .header-nav,
+    .header-login {
+        display: none;
+    }    
+}
+    
+

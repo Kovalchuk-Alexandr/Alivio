@@ -5,11 +5,9 @@
     background: #FFF;
     color: #000;
     box-shadow: 0px 3.622px 18.112px rgba(165, 165, 165, 0.25);
-
     display: flex;
     flex-direction: column;
     align-items: center;
-
     padding: 22px 20px 30px;
 }
 
@@ -33,7 +31,6 @@
 
     /* width: 110.486px; */
     height: 0.746px;
-
 }
 
 .card-avatar {
@@ -61,4 +58,25 @@
 
 .card ol li + li {
     margin-top: 16px;
+}
+
+@media (max-width: 1299px) {
+    .card {
+        width: 250px;
+        padding: 10px 10px;
+    }
+
+    .card-avatar {
+        margin-bottom: 10px;
+    }
+
+    .card-content-title {
+        font-size: 16px;
+        line-height: 120%; /* 25.009px */
+        margin-bottom: 8px;
+    }
+
+    .card ol li + li {
+        margin-top: 8px;
+    }
 }

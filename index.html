@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="./css/blocks/card.css">
     <link rel="stylesheet" href="./css/blocks/avatar.css">
     <link rel="stylesheet" href="./css/blocks/footer.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav-button.css">
+    <link rel="stylesheet" href="./css/blocks/mobile-nav.css">
     <!-- Fonts -->
     <link rel="stylesheet" href="./css/fonts/georgia/stylesheet.css">
     <link rel="stylesheet" href="./css/fonts/lato/stylesheet.css">
@@ -46,10 +48,38 @@
                     <a href="#!" class="btn">Start Trial</a>
                 </div>
 
+                <button  type="button" class="mobile-nav-button ">
+                    <span class="mobile-nav-button__icon "></span>
+                </button>
             </div>
            
         </div>
     </header>
+
+    <!-- Блок мобильной навигациии -->
+    <div class="mobile-nav">
+        <div class="mobile-wrapper ">
+
+            <div class="mobile-nav-logo">
+                <a href="#"><img src="./img/logo.svg" alt="Mobile Logo"></a>
+            </div>
+
+            <nav class="mobile-nav-list">
+                <ul>
+                    <li><a href="#!">Why Alivio</a></li>
+                    <li><a href="#!">Solutions</a></li>
+                    <li><a href="#!">Community</a></li>
+                    <li><a href="#!">Pricing</a></li>
+                </ul>
+            </nav>
+
+            <div class="mobile-login">
+                <a href="#!" class="">Sign in</a>
+                <a href="#!" class="btn btn-lg">Start Trial</a>
+            </div>
+        </div>
+
+    </div>
 
     <main>
         <section class="home ">
@@ -59,14 +89,13 @@
                     <h1 class="home-heading">Be aware, Manage well.</h1>
 
                     <div class="home-text">
-                        <p>Everyone experiences stress in different ways. &shy; <span class="emphasize">Let Alivio</span> guide you, in a personalized journal experience, to overcome your stress.
+                        <p>Everyone experiences stress in different ways. <br> <span class="emphasize">Let Alivio</span> guide you, in a personalized journal experience, to overcome your stress.
                         </p>
                     </div>
                     
                     <div class="home-btn">
                         <a href="#!" class="btn btn-lg">Find Your Way</a>
                     </div>
-
                     
                 </div>
             </div>
@@ -79,10 +108,10 @@
         <section class="how-it-works ">
             <div class="container">
 
-                <div class="how-it-works-header">
+                <div class="how-it-works-header ">
                     <div class="how-it-works-header-head">
                         <h2 class="how-it-works-title">How it works</h2>
-                        <h3 class="how-it-works-subtitle">Understand & Release the stress in 3 steps</h3>
+                        <h3 class="how-it-works-subtitle">Understand & Release<br>the stress in 3 steps</h3>
                     </div>
 
                     <div class="how-it-works-header-content">
@@ -90,11 +119,11 @@
                     </div>
                 </div>                
 
-                <div class="how-it-works-steps">
+                <div class="how-it-works-steps ">
 
                     <div class="step">
 
-                        <h3 class="step-heading" data-number="01">Personalize</h3>
+                        <h4 class="step-heading" data-number="01">Personalize</h4>
 
                         <div class="step-text">
                             <p>
@@ -111,7 +140,7 @@
 
                     <div class="step">
 
-                        <h3 class="step-heading" data-number="02">Write & Understand</h3>
+                        <h4 class="step-heading" data-number="02">Write & Understand</h4>
 
                         <div class="step-text">
                             <p>
@@ -128,7 +157,7 @@
 
                     <div class="step">
 
-                        <h3 class="step-heading" data-number="03">Alivio!</h3>
+                        <h4 class="step-heading" data-number="03">Alivio!</h4>
 
                         <div class="step-text">
                             <p>
@@ -146,8 +175,8 @@
 
                 </div>                
 
-
             </div>
+
         </section>
 
         <section class="story ">
@@ -167,13 +196,19 @@
 
                     <div class="story-video">
                         
-                        <div class="story-video-overley">
-                            <button class="story-video-btn">
-                                <img src="./img/story/play-white.svg" alt="Play">
+                        <div id="video-story-overlay"  class="story-video-overlay">
+                            <button id="video-story-btn" class="story-video-btn">
+                                <img id="video-story-btn-icon" width="82" height="82" src="./img/story/play-white.svg" alt="Play">
                             </button>
                         </div>
 
-                        <img src="./img/story/video-cover.jpg" class="story-video-object" alt="Video cover"></img>
+                        <!-- <img src="./img/story/video-cover.jpg" class="story-video-object " alt="Video cover"></img> -->
+
+                        <video class="story-video-object" id="video-story">
+                            <source src="./video/customer-story.mp4" type="video/mp4">
+                        </video>
+
+
                     </div>
 
                 </div>
@@ -239,7 +274,7 @@
 
     </main>
 
-    <footer class="footer">
+    <footer class="footer ">
         <div class="container">
             <div class="footer-content">
 
@@ -259,5 +294,6 @@
         </div>
     </footer>
 
+    <script src="./js/main.js"></script>
 </body>
 </html>

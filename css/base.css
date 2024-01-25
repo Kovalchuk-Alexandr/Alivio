@@ -8,6 +8,13 @@ body {
     font-size: 20px;
 
     color: #424242;
+    /* min-width: 1600px; */
+}
+
+@media (max-width: 992px) {
+    body {
+        font-size: 18px;
+    }
 }
 
 
@@ -32,10 +39,16 @@ body {
 
 /* Grid */
 .container {
-    max-width: 1400px;
+    width: 1400px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+}
+
+@media (max-width: 1399px) {
+    .container {
+        width: 100%;
+    }
 }
 
 .container-lg {
